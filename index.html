@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="viewport: width: device-width;,initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
+    <style>
+        #abc {
+          display: none;
+        }
+      </style>
+    </head>
+    <body>         
+        <div class="abc">
+            <audio id="myAudio" src="happy-birthday-to-you-piano-version-13976.mp3" autoplay volume="0.1">
+            </audio>
+            <button onclick="document.getElementById('birthday-card').play()"></button>
+          </div>    
+        <div class="container">
+            <div class="card" id="birthday-card">
+                <div class="outside">
+                    <h1>HAPPY BIRTHDAY POOKIE!!</h1>
+                    <h3>My dear little puchku,wish u many many happy returns of the day.Khub bhalo thaako and happy thaako.Onek onek ashirbaad tomake pookli onek success pao,tomar shob icche jeno puron hoy.Chotto tah dekte dekte 22 years old hoye gelo but u still smol for me.</h3>
+                </div>
+                <div class="inside">
+                    <img src="cakegif.gif"/>
+                    <h3>Lots of love,hugs,kisses and wishes and happiness to you Gubli.May god bless you.</h3>
+                </div>
+            </div>
+            <div class="block">
+                <div class="frames frame1">
+                    <img src="pic1 (1).jpeg" alt="">
+                    <p>Handsome young man</p>
+                </div>
+                <div class="frames frame2">
+                    <img src="pic1 (3).jpeg" alt="">
+                    <p>Cute gecho</p>
+                </div>
+                <div class="frames frame3">
+                    <img src="pic1 (6).jpeg" alt="">
+                    <p>Chotto shaada phool</p>
+                </div>
+                <div class="frames frame4">
+                    <img src="pic1 (8).jpeg" alt="">
+                    <p>Pretty and sweet poodle</p>
+                </div>
+            </div>
+        </div>
+        <script>
+            const birthdayCard = document.getElementById("birthday-card");
+            const birthdaySound = document.getElementById("myAudio");
+            
+            birthdayCard.addEventListener("mouseover", () => {
+            birthdaySound.play();
+            });
+  </script>
+    </body>
+</html>
